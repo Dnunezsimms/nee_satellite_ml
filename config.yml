@@ -1,0 +1,21 @@
+path_nee: "data/nee_clean.csv"
+paths_pred:
+  - [1, "data/NEE_predictors_season_1.csv"]
+  - [2, "data/NEE_predictors_season_2.csv"]
+  - [3, "data/NEE_predictors_season_3.csv"]
+predictors:
+  - LST
+  - NDVI
+  - EVI
+  - NDWI
+  - RAD
+  - RAD_topo
+  - SWC_norm
+outdir: "results"
+save_models: false
+corr_threshold: 0.1
+min_pred: 3
+max_pred: 5
+random_state: 42
+group_col: "season"
+target: "NEE_gC_m2_d"
